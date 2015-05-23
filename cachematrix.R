@@ -2,11 +2,11 @@
 # cache's its inverse.
 
 ### makeCacheMatrix creates a special "matrix" object that can cache its inverse. makeCacheMatrix 
-# is really a list containing functions to:
-# 1.- set the value of the matrix (set.matrix)
-# 2.- get the value of the matrix (get.matrix)
-# 3.- set the value of the inverse matrix (set.inverse)
-# 4.- get the value of the inverse matrix (get.inverse)
+# is really a list containing the following functions:
+# 1.- set.matrix: set the value of the matrix 
+# 2.- get.matrix: get the value of the matrix
+# 3.- set.inverse: set the value of the inverse matrix
+# 4.- get.inverse: get the value of the inverse matrix
 
 makeCacheMatrix <- function(x = matrix()) {
         inv.x <- NULL
